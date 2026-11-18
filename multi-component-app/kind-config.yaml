@@ -8,7 +8,7 @@ nodes:
     labels:
       mongo-data: "true"
     extraMounts:
-      - hostPath: /workspaces/YOUR-REPO-NAME/multi-component-app/data
+      - hostPath: /workspaces/multi-component-app/multi-component-app/data
         containerPath: /mnt/mongo-data
   # A second worker for other workloads (e.g. the Express Web App).
   - role: worker
